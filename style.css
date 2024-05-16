@@ -1,0 +1,81 @@
+body, html {
+    margin: 0;
+
+}
+
+.logo {
+    width: 100px;
+}
+.nav {
+    margin-bottom: 0px;
+    background-color: red;
+    display: flex;
+
+}
+
+.nav ul {
+    margin: 0;
+
+}
+
+.nav li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav a{
+    text-transform:uppercase;
+    display: block;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+}
+
+.nav a:hover {
+    background-color: white;
+    color: red;
+    text-decoration: none;
+}
+
+.footer {
+    padding: 30px;
+    text-align: center;
+    background-color: grey;
+    color: white;
+    max-width: 100%;
+}
+@media (max-width:700px) {
+    .logo{
+        width: 100%;
+    }
+}
+form {
+    margin: 30px;
+}
+
+.title {
+    background-color: white;
+    width: 100%;
+    margin: 20px 20px 5px 20px;
+    padding: 20px 10px;
+}
+
+.datum {
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    margin: 0px 20px ;
+}
+
+.clanak {
+    background-color: red;
+}
+
+.tijelo_clanka {
+    background-color: lightgrey;
+    margin-top: 30px
+    ;
+}
+.slika p {
+    margin: 0px;
+}
