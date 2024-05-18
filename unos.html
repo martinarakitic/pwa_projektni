@@ -16,16 +16,14 @@
             <nav class="nav container-fluid ">  
                 <div class="container d-flex align-items-end">
                 <img class="logo d-inline-block" src="img/logo.jpg" alt="Logo" />
-                
-                    <ul class="d-inline-block ">
-                        <li class="nav-item"><a href="index.php">Home</a></li>
-                        <li class="nav-item"><a href="#">Reise</a></li>
-                        <li class="nav-item"><a href="#">VERBRAUCHER</a></li>
-                        <li class="nav-item"><a href="unos.html">Unos</a></li>
-                        <li class="nav-item"><a href="#" >Administracija</a></li>
-
-                    </ul>
-            </div>
+                <ul>
+                    <li class="nav-item"><a href="index.php">Home</a></li>
+                    <li><a href="kategorija.php?kategorija=moda" class="">Moda</a></li>
+                    <li><a href="kategorija.php?kategorija=parfemi" class="">Parfemi</a></li>
+                    <li class="nav-item"><a href="unos.html">Unos</a></li>
+                    <li><a href="administrator.php" class="">Administracija</a></li>
+                </ul>
+                </div>
             </nav>
     </header>
 
@@ -58,8 +56,8 @@
                     <label for="category">Kategorija vijesti</label>
                     <div class="form-field"> 
                         <select name="category" id="" class="form-field-textual"> 
-                            <option value="sport">Moda</option> 
-                            <option value="kultura">Parfemi</option> 
+                            <option value="moda">Moda</option> 
+                            <option value="parfemi">Parfemi</option> 
                         </select> 
                     </div> 
                 </div> 
