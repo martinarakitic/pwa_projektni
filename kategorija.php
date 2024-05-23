@@ -29,6 +29,7 @@ if (!$dbc) {
                     <li><a href="kategorija.php?kategorija=parfemi" class="">Parfemi</a></li>
                     <li class="nav-item"><a href="unos.html">Unos</a></li>
                     <li><a href="administrator.php" class="">Administracija</a></li>
+                    <li><a href="registracija.php">Registracija</a></li>
                 </ul>
             </div>
         </nav>

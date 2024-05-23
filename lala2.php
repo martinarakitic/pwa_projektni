@@ -1,10 +1,3 @@
-<?php 
-    include 'connect.php'; 
-    define('UPLPATH', 'img/'); 
-    if (!$dbc) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-?>
 <!DOCTYPE html>
 <html lang="hr">
 <head>
@@ -86,6 +79,7 @@
                             } 
                         } 
                         mysqli_close($dbc);
+                    }
                     }
                     echo '<br><span class="bojaPoruke">'.$msg.'</span>'; 
                     ?> 
