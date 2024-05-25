@@ -30,6 +30,7 @@
                     <li class="nav-item"><a href="unos.html">Unos</a></li>
                     <li><a href="administrator.php" class="">Administracija</a></li>
                     <li><a href="registracija.php">Registracija</a></li>
+                    <li><a href="prijava.php">Prijava</a></li>
                 </ul>
             </div>
         </nav>

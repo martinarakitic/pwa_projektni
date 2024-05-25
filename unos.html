@@ -29,11 +29,11 @@
     </header>
 
     <main>
-        <section class="container">
-            <form enctype="multipart/form-data" action="unos.php" method="POST"> 
+        <section class="container d-flex justify-content-center align-items-center usnos_forma">
+            <form enctype="multipart/form-data" action="unos.php" method="POST" class="form"> 
                 <div class="form-item"> 
                     <span id="porukaTitle" class="bojaPoruke"></span> 
-                    <label for="title">Naslov vjesti</label> 
+                    <label for="title">Naslov vijesti</label> 
                     <div class="form-field"> 
                         <input type="text" name="title" id="title" class="form-field-textual"> 
                     </div> 
@@ -78,8 +78,8 @@
                     </label> 
                 </div> 
                 <div class="form-item"> 
-                    <button type="reset" value="Poništi">Poništi</button> 
-                    <button type="submit" value="Prihvati" id="slanje">Prihvati</button> 
+                    <button type="reset" value="Poništi" class="ponisti">Poništi</button> 
+                    <button type="submit" value="Prihvati" id="slanje" class="slanje">Prihvati</button> 
                 </div> 
             </form>
         </section>
