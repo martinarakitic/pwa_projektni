@@ -121,9 +121,17 @@ if (isset($_SESSION['username']) && isset($_SESSION['level'])) {
             } else { 
                 $archive=0; 
             } 
-            $target_dir = 'img/'.$picture; 
-            move_uploaded_file($_FILES["pphoto"]["tmp_name"], $target_dir); 
-            $id=$_POST['id']; 
+            $id = $_POST['id'];
+            if (empty($picture)) {
+                $query = "SELECT slika FROM vijesti WHERE id=$id";
+                $result = mysqli_query($dbc, $query);
+                $row = mysqli_fetch_array($result);
+                $picture = $row['slika'];
+            } else {
+                $target_dir = 'img/' . $picture;
+                move_uploaded_file($_FILES["pphoto"]["tmp_name"], $target_dir);
+            }
+        
             $query = "UPDATE vijesti SET naslov='$title', sazetak='$about', tekst='$content', slika='$picture', kategorija='$category', arhiva='$archive' WHERE id=$id "; 
             $result = mysqli_query($dbc, $query); 
         }
