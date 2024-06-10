@@ -30,6 +30,7 @@ if (!$dbc) {
                     <li class="nav-item"><a href="unos.html">Unos</a></li>
                     <li><a href="administrator.php" class="">Administracija</a></li>
                     <li><a href="registracija.php">Registracija</a></li>
+                    <li><a href="prijava.php">Prijava</a></li>
                 </ul>
             </div>
         </nav>
@@ -37,14 +38,16 @@ if (!$dbc) {
 
     <main class="container main">
         <section class="moda">
-            <h2>Moda</h2>
-            <hr>
-            <div class="row">
+            
             <?php 
                 if (isset($_GET['kategorija'])) {
                     $kategorija = mysqli_real_escape_string($dbc, $_GET['kategorija']);
+                   echo ' <h2>' . $kategorija . '</h2>
+                    <hr>
+                    <div class="row">';
+                    $arhiva = isset($_GET['arhiva']) ? mysqli_real_escape_string($dbc, $_GET['arhiva']) : 0;
                     
-                    $query = "SELECT * FROM vijesti WHERE kategorija='$kategorija'";
+                    $query = "SELECT * FROM vijesti WHERE kategorija='$kategorija' AND arhiva=$arhiva ";
                     $result = mysqli_query($dbc, $query); 
                     if (!$result) {
                         die("Query failed: " . mysqli_error($dbc));
@@ -77,7 +80,7 @@ if (!$dbc) {
     </main>
 
     <footer class="footer">
-        <p>&copy; 2019 GmBh</p>
+        <p>Copyright 2019 GmBh</p>
     </footer>
 </body>
 </html>

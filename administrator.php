@@ -146,8 +146,9 @@ if (isset($_SESSION['username']) && isset($_SESSION['level'])) {
     </main>
 
     <footer class="footer">
-        <p>&copy; 2019 GmBh</p>
+        <p>Copyright 2019 GmBh</p>
     </footer>
+    
 </body>
 </html>
 
