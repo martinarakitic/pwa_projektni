@@ -74,7 +74,7 @@ if (isset($_POST['prijava'])) {
     </main>
 
     <footer class="footer">
-        <p>&copy; 2019 GmBh</p>
+        <p>Copyright 2019 GmBh</p>
     </footer>
 </body>
 </html>
